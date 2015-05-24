@@ -1,0 +1,97 @@
+/* line 3, ../sass/tsearch.scss */
+.medium {
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 11, ../sass/tsearch.scss */
+.color {
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 19, ../sass/tsearch.scss */
+.color.red {
+  background-color: red;
+}
+
+/* line 23, ../sass/tsearch.scss */
+.color.blue {
+  background-color: blue;
+}
+
+/* line 27, ../sass/tsearch.scss */
+.color.green {
+  background-color: green;
+}
+
+/* line 31, ../sass/tsearch.scss */
+.color.black {
+  background-color: black;
+}
+
+/* line 35, ../sass/tsearch.scss */
+.color.orange {
+  background-color: orange;
+}
+
+/* line 39, ../sass/tsearch.scss */
+.country {
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 47, ../sass/tsearch.scss */
+.country.america {
+  background-image: url("../assets/svg/usa.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 54, ../sass/tsearch.scss */
+.country.mexico {
+  background-image: url("../assets/svg/mexico.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 61, ../sass/tsearch.scss */
+.country.japan {
+  background-image: url("../assets/svg/japan.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 68, ../sass/tsearch.scss */
+.country.france {
+  background-image: url("../assets/svg/france.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 75, ../sass/tsearch.scss */
+.country.italy {
+  background-image: url("../assets/svg/italy.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 82, ../sass/tsearch.scss */
+.selected {
+  border: 2px solid white;
+  outline: 2px solid red;
+}
