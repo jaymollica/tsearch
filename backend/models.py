@@ -9,15 +9,15 @@ class Color(models.Model):
     return self.name
 
 class Country(models.Model):
-  name = models.CharField(max_length=100)
-  svg = models.CharField(max_length=100)
+  name = models.CharField(max_length=100, unique=True)
+  svg = models.CharField(max_length=100,null=True)
 
   def __str__(self):
     return self.name
 
 class Medium(models.Model):
-  medium = models.CharField(max_length=100)
-  url = models.CharField(max_length=100)
+  medium = models.CharField(max_length=100, unique=True)
+  url = models.CharField(max_length=100,null=True)
 
   def __str__(self):
     return self.medium
@@ -26,9 +26,11 @@ class Artwork(models.Model):
   title = models.CharField(max_length=100)
   url = models.CharField(max_length=100)
   artist = models.CharField(max_length=100, default="")
+  date_created = models.DateTimeField(null=True)
   country = models.ForeignKey("Country")
   medium = models.ForeignKey("Medium")
-  color = models.ForeignKey("Color", related_name="dominant_color")
+  
+  #color = models.ForeignKey("Color", related_name="dominant_color")
 
   def __str__(self):
     return self.title

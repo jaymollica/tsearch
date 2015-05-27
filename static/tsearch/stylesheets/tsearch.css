@@ -1,4 +1,9 @@
-/* line 3, ../sass/tsearch.scss */
+/* line 1, ../sass/tsearch.scss */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* line 5, ../sass/tsearch.scss */
 .medium {
   margin-top: 10px;
   margin-left: 10px;
@@ -7,7 +12,7 @@
   width: 100px;
 }
 
-/* line 11, ../sass/tsearch.scss */
+/* line 13, ../sass/tsearch.scss */
 .color {
   margin-top: 10px;
   margin-left: 10px;
@@ -16,32 +21,32 @@
   width: 100px;
 }
 
-/* line 19, ../sass/tsearch.scss */
+/* line 21, ../sass/tsearch.scss */
 .color.red {
   background-color: red;
 }
 
-/* line 23, ../sass/tsearch.scss */
+/* line 25, ../sass/tsearch.scss */
 .color.blue {
   background-color: blue;
 }
 
-/* line 27, ../sass/tsearch.scss */
+/* line 29, ../sass/tsearch.scss */
 .color.green {
   background-color: green;
 }
 
-/* line 31, ../sass/tsearch.scss */
+/* line 33, ../sass/tsearch.scss */
 .color.black {
   background-color: black;
 }
 
-/* line 35, ../sass/tsearch.scss */
+/* line 37, ../sass/tsearch.scss */
 .color.orange {
   background-color: orange;
 }
 
-/* line 39, ../sass/tsearch.scss */
+/* line 41, ../sass/tsearch.scss */
 .country {
   margin-top: 10px;
   margin-left: 10px;
@@ -50,7 +55,7 @@
   width: 100px;
 }
 
-/* line 47, ../sass/tsearch.scss */
+/* line 49, ../sass/tsearch.scss */
 .country.america {
   background-image: url("../assets/svg/usa.svg");
   background-size: 100%;
@@ -58,7 +63,7 @@
   background-position: center;
 }
 
-/* line 54, ../sass/tsearch.scss */
+/* line 56, ../sass/tsearch.scss */
 .country.mexico {
   background-image: url("../assets/svg/mexico.svg");
   background-size: 100%;
@@ -66,7 +71,7 @@
   background-position: center;
 }
 
-/* line 61, ../sass/tsearch.scss */
+/* line 63, ../sass/tsearch.scss */
 .country.japan {
   background-image: url("../assets/svg/japan.png");
   background-size: 100%;
@@ -74,7 +79,7 @@
   background-position: center;
 }
 
-/* line 68, ../sass/tsearch.scss */
+/* line 70, ../sass/tsearch.scss */
 .country.france {
   background-image: url("../assets/svg/france.svg");
   background-size: 100%;
@@ -82,7 +87,7 @@
   background-position: center;
 }
 
-/* line 75, ../sass/tsearch.scss */
+/* line 77, ../sass/tsearch.scss */
 .country.italy {
   background-image: url("../assets/svg/italy.svg");
   background-size: 100%;
@@ -90,8 +95,13 @@
   background-position: center;
 }
 
-/* line 82, ../sass/tsearch.scss */
+/* line 84, ../sass/tsearch.scss */
 .selected {
   border: 2px solid white;
   outline: 2px solid red;
+}
+
+/* line 89, ../sass/tsearch.scss */
+.gallery-container {
+  border: 1px solid red;
 }

@@ -1,4 +1,6 @@
-
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
 
 .medium {
   margin-top:10px;
@@ -82,4 +84,8 @@
 .selected {
   border: 2px solid white;
   outline: 2px solid red;
+}
+
+.gallery-container {
+  border:1px solid red;
 }

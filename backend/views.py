@@ -21,3 +21,8 @@ class GalleryView(View):
     data = serializers.serialize("json",qs);
     #return render_template("backend/gallery/json.html", request, data=qs.values())
     return HttpResponse(data, content_type="application/json")
+
+
+class HomeView(View):
+  def get(self, request):
+    return render_template("backend/index.html", request)

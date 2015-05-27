@@ -12,28 +12,25 @@
     <title>Tactile Search</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
 
     <link href="stylesheets/tsearch.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./index_files/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
-    <div class="container">
-      <div class="row">
-        I want to see.................
+    <nav class="navbar">
+      <div class="container">
+        <div class="row">
+          <h1>SF MOMA</h1>
+          <h2>I want to see...</h2>
+        </div>
       </div>
-      <!-- Example row of columns -->
+    </nav>
+
+    <div class="container">
       <div class="row">
         <div class="col-md-4 col-xs-12 colors">
           <a href="#">
@@ -107,21 +104,36 @@
         </div>
       </div>
 
-      <hr>
+      <div class="row gallery-container">
+        <div class="col-md-4 col-xs-12">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!--
+            <ol class="carousel-indicators"></ol>
+            -->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner"></div>
+            <!-- Controls -->
+            <!--
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            -->
+          </div>
+        </div>
+      </div>
 
       <footer>
       </footer>
-    </div> <!-- /container -->
 
+    </div> 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/lib/jquery.min.js"></script>
-    <script src="./js/lib/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="./js/tsearch.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/lib/ie10-viewport-bug-workaround.js"></script>
   
-
-</body></html>
+  </body>
+</html>
