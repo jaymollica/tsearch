@@ -2,7 +2,9 @@
 
 <!DOCTYPE html>
 <!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,73 +29,67 @@
       <div class="container">
         <div class="row">
           <h1>SF MOMA</h1>
-          <h2>I want to see...</h2>
+          <h2>Tactile Search</h2>
         </div>
       </div>
     </nav>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-xs-12 colors">
+        <div class="col-md-4 col-xs-12 colors filter">
+          
           <a href="#">
-            <div class="color red" data-color="red"></div>
-          </a>
-        
-          <a href="#">
-            <div class="color blue" data-color="blue"></div>
+            <div class="color blue" data-color="6"></div>
           </a>
      
           <a href="#">
-            <div class="color green" data-color="green"></div>
+            <div class="color green" data-color="7"></div>
           </a>
         
           <a href="#">
-            <div class="color black" data-color="black"></div>
+            <div class="color black" data-color="8"></div>
           </a>
        
           <a href="#">
-            <div class="color orange" data-color="orange"></div>
+            <div class="color orange" data-color="9"></div>
           </a>
         </div>
       
-        <div class="col-md-4 col-xs-12 mediums">
+        <div class="col-md-4 col-xs-12 mediums filter">
+          
           <a href="#">
             <div>
-              <img src="{% static "tsearch/assets/img/water-color.jpg" %}" data-medium="water colors" alt="Water Colors" class="medium" />
+              <img src="{% static "tsearch/assets/img/oil-paint.jpg" %}" data-medium="paint" alt="Paintings" class="medium" />
             </div>
           </a>
 
           <a href="#">
             <div>
-              <img src="{% static 'tsearch/assets/img/oil-paint.jpg' %}" data-medium="oil paintings" alt="Oil Paintings" class="medium" />
+              <img src="{% static "tsearch/assets/img/sculpture.jpg" %}" data-medium="sculpture" alt="sculpture" class="medium" />
             </div>
           </a>
 
           <a href="#">
             <div>
-              <img src="{% static 'tsearch/assets/img/photography.jpg' %}" data-medium="photographs" alt="Photographs" class="medium" />
+              <img src="{% static "tsearch/assets/img/photography.jpg" %}" data-medium="photo" alt="Photographs" class="medium" />
             </div>
           </a>
 
           <a href="#">
             <div>
-              <img src="{% static 'tsearch/assets/img/sculpture.jpg' %}" data-medium="sculptures" alt="Sculptures" class="medium" />
+              <img src="{% static "tsearch/assets/img/print.jpg" %}" data-medium="print" alt="Prints" class="medium" />
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 col-xs-12 countries">
+        <div class="col-md-4 col-xs-12 countries filter">
           <a href="#">
-            <div class="country america" data-country="America">
+            <div class="country america" data-country="United States">
             </div>
           </a>
 
           <a href="#">
             <div class="country japan" data-country="Japan"></div>
-          </a>
-
-          <a href="#">
-            <div class="country italy" data-country="Italy"></div>
           </a>
 
           <a href="#">
@@ -106,27 +102,43 @@
         </div>
       </div>
 
-      <div class="row gallery-container">
-        <div class="col-md-4 col-xs-12">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <!--
-            <ol class="carousel-indicators"></ol>
-            -->
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner"></div>
-            <!-- Controls -->
-            <!--
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-            -->
-          </div>
-        </div>
-      </div>
+      <div class="modal fade" id="gallery-container">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div class="col-md-4 col-xs-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <!--
+                  <ol class="carousel-indicators"></ol>
+                  -->
+                  <!-- Wrapper for slides -->
+                  <div id="gallery" class="carousel-inner"></div>
+                  <!-- Controls -->
+                  <!--
+                  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                  -->
+                  
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!--
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              -->
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
 
       <footer>
       </footer>

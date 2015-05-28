@@ -89,3 +89,12 @@ body {
 .gallery-container {
   border:1px solid red;
 }
+
+.modal-header, .modal-footer {
+  border:0;
+}
+
+.carousel-inner {
+  display:flex;
+  justify-content: center;
+}

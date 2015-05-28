@@ -105,3 +105,14 @@ body {
 .gallery-container {
   border: 1px solid red;
 }
+
+/* line 93, ../sass/tsearch.scss */
+.modal-header, .modal-footer {
+  border: 0;
+}
+
+/* line 97, ../sass/tsearch.scss */
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}

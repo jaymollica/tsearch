@@ -7,8 +7,8 @@
     $('.color').click(function() {
       $('.color').removeClass('selected');   
       $(this).addClass('selected');
-      var color = $(event.currentTarget).data('color');
-      addSelection('color', color);
+      var decade = $(event.currentTarget).data('color');
+      addSelection('decade', decade);
     });
 
     $('.medium').click(function() {
@@ -38,30 +38,47 @@
       }
     };
 
+    $(".close").click(function() {
+      $('.color').removeClass('selected');
+      $('.medium').removeClass('selected');
+      $('.country').removeClass('selected');
+      selectedElements = [];
+    });
+
     function createGallery(filters) {
 
-      var url = "/php/get_gallery.php";
+      var url = "/backend/gallery";
+
+      var decade = filters.decade;
+      var medium = filters.medium;
+      var country = filters.country;
 
       $.ajax({
-        type: "POST",
         url: url,
-        data: {filters: filters},
+        data: {decade: decade, medium: medium, country},
       }).done(function(data) {
         $("#gallery").empty();
+        console.log(data);
+        $('#gallery-container').modal('toggle');
 
-        $.each(data, function(i) {
-          var artist = this.artist;
-          var image_url = this.image_url;
-          var title = this.title;
+        if(data.length > 0) {
+          $.each(data, function(i) {
+            var artist = this.fields.artist;
+            var image_url = this.fields.url;
+            var title = this.fields.title;
 
-          $('<div class="item"><img src="'+image_url+'"><div class="carousel-caption">'+title+'<br>'+artist+'</div>   </div>').appendTo('.carousel-inner');
-          $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
+            $('<div class="item"><img src="'+image_url+'"><div class="carousel-caption"><i>'+title+'</i><br>'+artist+'</div>   </div>').appendTo('.carousel-inner');
+            $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
 
-          $('.item').first().addClass('active');
-          $('.carousel-indicators > li').first().addClass('active');
-          $('#carousel-example-generic').carousel();
+            $('.item').first().addClass('active');
+            $('.carousel-indicators > li').first().addClass('active');
+            $('#carousel-example-generic').carousel();
 
-        });
+          });
+        }
+        else {
+          $("<div><p>No Results!  Try Again...</p></div>").appendTo('.carousel-inner');
+        }
       });
 
     }
