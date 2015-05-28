@@ -1,0 +1,100 @@
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.medium {
+  margin-top:10px;
+  margin-left:10px;
+  float:left;
+  height: 100px;
+  width: 100px;
+}
+
+.color {
+  margin-top:10px;
+  margin-left:10px;
+  float:left;
+  height: 100px;
+  width: 100px;
+}
+
+.color.red {
+  background-color: red;
+}
+
+.color.blue {
+  background-color: blue;
+}
+
+.color.green {
+  background-color: green;
+}
+
+.color.black {
+  background-color: black;
+}
+
+.color.orange {
+  background-color: orange;
+}
+
+.country {
+  margin-top:10px;
+  margin-left:10px;
+  float:left;
+  height: 100px;
+  width: 100px;
+}
+
+.country.america {
+  background-image:url("../assets/svg/usa.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.country.mexico {
+  background-image:url("../assets/svg/mexico.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.country.japan {
+  background-image:url("../assets/svg/japan.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.country.france {
+  background-image:url("../assets/svg/france.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.country.italy {
+  background-image:url("../assets/svg/italy.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.selected {
+  border: 2px solid white;
+  outline: 2px solid red;
+}
+
+.gallery-container {
+  border:1px solid red;
+}
+
+.modal-header, .modal-footer {
+  border:0;
+}
+
+.carousel-inner {
+  display:flex;
+  justify-content: center;
+}
