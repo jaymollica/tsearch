@@ -1,1 +1,1 @@
-web: gunicorn tsearch.wsgi --log-file -
+web: gunicorn tsearch-moma.wsgi --log-file -
