@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,7 +18,7 @@
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
 
-    <link href="stylesheets/tsearch.css" rel="stylesheet">
+    <link href={% static "tsearch/stylesheets/tsearch.css" %} type='text/css' rel="stylesheet">
   </head>
 
   <body>
@@ -57,25 +59,25 @@
         <div class="col-md-4 col-xs-12 mediums">
           <a href="#">
             <div>
-              <img src="assets/img/water-color.jpg" data-medium="water colors" alt="Water Colors" class="medium" />
+              <img src="{% static "tsearch/assets/img/water-color.jpg" %}" data-medium="water colors" alt="Water Colors" class="medium" />
             </div>
           </a>
 
           <a href="#">
             <div>
-              <img src="assets/img/oil-paint.jpg" data-medium="oil paintings" alt="Oil Paintings" class="medium" />
+              <img src="{% static 'tsearch/assets/img/oil-paint.jpg' %}" data-medium="oil paintings" alt="Oil Paintings" class="medium" />
             </div>
           </a>
 
           <a href="#">
             <div>
-              <img src="assets/img/photography.jpg" data-medium="photographs" alt="Photographs" class="medium" />
+              <img src="{% static 'tsearch/assets/img/photography.jpg' %}" data-medium="photographs" alt="Photographs" class="medium" />
             </div>
           </a>
 
           <a href="#">
             <div>
-              <img src="assets/img/sculpture.jpg" data-medium="sculptures" alt="Sculptures" class="medium" />
+              <img src="{% static 'tsearch/assets/img/sculpture.jpg' %}" data-medium="sculptures" alt="Sculptures" class="medium" />
             </div>
           </a>
         </div>
@@ -133,7 +135,7 @@
 
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="./js/tsearch.js"></script>
+    <script src={% static "tsearch/js/tsearch.js" %}></script>
   
   </body>
 </html>
