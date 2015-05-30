@@ -4,21 +4,21 @@
 
   $(document).ready(function() {
 
-    $('.color').on("click touchstart",function() {
+    $('.color').on("mousedown tap",function() {
       $('.color').removeClass('selected');   
       $(this).addClass('selected');
       var decade = $(event.currentTarget).data('color');
       addSelection('decade', decade);
     });
 
-    $('.medium').on("click touchstart",function() {
+    $('.medium').on("mousedown tap",function() {
       $('.medium').removeClass('selected');    
       $(this).addClass('selected');
       var medium = $(event.currentTarget).data('medium');
       addSelection('medium', medium);
     });
 
-    $('.country').on("click touchstart",function() {
+    $('.country').on("mousedown tap",function() {
       $('.country').removeClass('selected');   
       $(this).addClass('selected');
       var country = $(event.currentTarget).data('country');
