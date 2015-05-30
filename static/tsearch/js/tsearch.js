@@ -4,21 +4,21 @@
 
   $(document).ready(function() {
 
-    $('.color').on("mousedown tap",function() {
+    $('.color').on("click",function() {
       $('.color').removeClass('selected');   
       $(this).addClass('selected');
       var decade = $(event.currentTarget).data('color');
       addSelection('decade', decade);
     });
 
-    $('.medium').on("mousedown tap",function() {
+    $('.medium').on("click",function() {
       $('.medium').removeClass('selected');    
       $(this).addClass('selected');
       var medium = $(event.currentTarget).data('medium');
       addSelection('medium', medium);
     });
 
-    $('.country').on("mousedown tap",function() {
+    $('.country').on("click",function() {
       $('.country').removeClass('selected');   
       $(this).addClass('selected');
       var country = $(event.currentTarget).data('country');
@@ -55,7 +55,7 @@
 
       $.ajax({
         url: url,
-        data: {decade: decade, medium: medium, country},
+        data: {decade: decade, medium: medium, country:country}
       }).done(function(data) {
         $("#gallery").empty();
         console.log(data);
