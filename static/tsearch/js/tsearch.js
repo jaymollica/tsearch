@@ -4,21 +4,21 @@
 
   $(document).ready(function() {
 
-    $('.color').click(function() {
+    $('.color').on("click touchstart",function() {
       $('.color').removeClass('selected');   
       $(this).addClass('selected');
       var decade = $(event.currentTarget).data('color');
       addSelection('decade', decade);
     });
 
-    $('.medium').click(function() {
+    $('.medium').on("click touchstart",function() {
       $('.medium').removeClass('selected');    
       $(this).addClass('selected');
       var medium = $(event.currentTarget).data('medium');
       addSelection('medium', medium);
     });
 
-    $('.country').click(function() {
+    $('.country').on("click touchstart",function() {
       $('.country').removeClass('selected');   
       $(this).addClass('selected');
       var country = $(event.currentTarget).data('country');
@@ -38,7 +38,7 @@
       }
     };
 
-    $(".close").click(function() {
+    $(".close").on("click touchstart",function() {
       $('.color').removeClass('selected');
       $('.medium').removeClass('selected');
       $('.country').removeClass('selected');
