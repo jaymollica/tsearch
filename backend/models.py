@@ -29,6 +29,7 @@ class Artwork(models.Model):
   date_created = models.DateTimeField(null=True)
   country = models.ForeignKey("Country")
   medium = models.ForeignKey("Medium")
+  #valid_url = models.BooleanField()
   
   #color = models.ForeignKey("Color", related_name="dominant_color")
 

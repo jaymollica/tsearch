@@ -71,13 +71,14 @@
             $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
 
             $('.item').first().addClass('active');
-            $('.carousel-indicators > li').first().addClass('active');
+            //$('.carousel-indicators > li').first().addClass('active');
             $('#carousel-example-generic').carousel();
 
           });
         }
         else {
-          $("<div><p>No Results!  Try Again...</p></div>").appendTo('.carousel-inner');
+          $(".modal-body").empty();
+          $("<div><p>No Results!  Try Again...</p></div>").appendTo('.modal-body');
         }
       });
 
