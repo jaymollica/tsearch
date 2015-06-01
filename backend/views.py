@@ -29,7 +29,7 @@ class GalleryView(View):
 
     qs = Artwork.objects.filter(country=country_id, 
                                 date_created__range=["19"+decade+"0-01-01", "19"+decade+"9-12-31"], 
-                                medium__in=medium_list)
+                                medium__in=medium_list).order_by('?')[:20]
     #qs_data = Artwork.objects.filter(Country="Mexico")
     data = serializers.serialize("json",qs)
     #return render_template("backend/gallery/json.html", request, data=qs.values())
