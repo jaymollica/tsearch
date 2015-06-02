@@ -57,18 +57,32 @@
         url: url,
         data: {decade: decade, medium: medium, country:country}
       }).done(function(data) {
-        $("#gallery").empty();
+        $("#carousel-container").empty();
         console.log(data);
         $('#gallery-container').modal('toggle');
 
         if(data.length > 0) {
+
+          var carouselContainer = '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">';
+              //carouselContainer += '<ol class="carousel-indicators"></ol>';
+              carouselContainer += '<div id="gallery" class="carousel-inner"></div>';
+              carouselContainer += '<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">';
+              carouselContainer += '<span class="glyphicon glyphicon-chevron-left"></span>';
+              carouselContainer += '</a>';
+              carouselContainer += '<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">';
+              carouselContainer += '<span class="glyphicon glyphicon-chevron-right"></span>';
+              carouselContainer += '</a>';
+              carouselContainer += '</div>';
+
+          $(carouselContainer).appendTo("#carousel-container");
+
           $.each(data, function(i) {
             var artist = this.fields.artist;
             var image_url = this.fields.url;
             var title = this.fields.title;
 
             $('<div class="item"><img src="'+image_url+'"><div class="carousel-caption"><i>'+title+'</i><br>'+artist+'</div>   </div>').appendTo('.carousel-inner');
-            $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
+            //$('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
 
             $('.item').first().addClass('active');
             //$('.carousel-indicators > li').first().addClass('active');
