@@ -1,0 +1,132 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Tactile Search</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+
+    <link href={% static "tsearch/stylesheets/tsearch.css" %} type='text/css' rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="row">
+          <h1>SFMOMA</h1>
+          <h2>Tactile Search</h2>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-12 colors filter">
+          
+          <a href="#">
+            <div class="color blue" data-color="6"></div>
+          </a>
+     
+          <a href="#">
+            <div class="color green" data-color="7"></div>
+          </a>
+        
+          <a href="#">
+            <div class="color black" data-color="8"></div>
+          </a>
+       
+          <a href="#">
+            <div class="color orange" data-color="9"></div>
+          </a>
+        </div>
+      
+        <div class="col-md-4 col-xs-12 mediums filter">
+          
+          <a href="#">
+            <div>
+              <img src="{% static "tsearch/assets/img/oil-paint.jpg" %}" data-medium="paint" alt="Paintings" class="medium" />
+            </div>
+          </a>
+
+          <a href="#">
+            <div>
+              <img src="{% static "tsearch/assets/img/sculpture.jpg" %}" data-medium="sculpture" alt="sculpture" class="medium" />
+            </div>
+          </a>
+
+          <a href="#">
+            <div>
+              <img src="{% static "tsearch/assets/img/photography.jpg" %}" data-medium="photo" alt="Photographs" class="medium" />
+            </div>
+          </a>
+
+          <a href="#">
+            <div>
+              <img src="{% static "tsearch/assets/img/print.jpg" %}" data-medium="print" alt="Prints" class="medium" />
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-xs-12 countries filter">
+          <a href="#">
+            <div class="country america" data-country="United States">
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="country japan" data-country="Japan"></div>
+          </a>
+
+          <a href="#">
+            <div class="country france" data-country="France"></div>
+          </a>
+
+          <a href="#">
+            <div class="country mexico" data-country="Mexico"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="modal fade" id="gallery-container">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div class="col-md-4 col-xs-12" id="carousel-container">
+                
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <footer>
+      </footer>
+
+    </div> 
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src={% static "tsearch/js/tsearch.js" %}></script>  
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "project_slug": "tsearch",
+    "environments": {
+        "stg": {
+            "default_server": "sandbox.sfmoma.org",
+            "ssh_port": "22",
+            "default_user": "jmollica",
+            "project_directory": "/domains/sfmoma.org/deploy_test",
+            "source_directory": "/domains/sfmoma.org/deploy_test/tsearch",
+            "virtualenv_directory": "/domains/sfmoma.org/deploy_test/aproject/venv",
+            "git_branch": "master",
+            "tags": ""
+        }
+    }
+}
